@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.js">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        .contenedor_fecha{
+             display: flex; 
+             font-family: 'Indie Flower', cursive;
+             font-size: 30px;
+             color: white;
+             -webkit-text-stroke: 0.5px;
+             -webkit-text-stroke-color: rgb(6, 0, 7);
+        }
+        #dia{
+            color: red;
+        }
+        #mesLetra{
+            color: rgb(13, 23, 173);
+        }
+    </style>
     <title>Ropa para mi</title>
 </head>
 <body>
-    <div id="llamo_fecha"></div>
-    <h1>Bienvenidos a Ropa para Mi. hola</h1> <!-- al a ver hecho el, desde github MERGER PULL REQUEST  me modifico atomaticamente en mi archivo (index.html) -->
+    <div class="contenedor_fecha">
+        
+        Hoy es un gran día,&nbsp;<div id="diaSemana"></div>&nbsp;<div id="dia"></div>&nbsp;de&nbsp;<div id="mesLetra"></div>
+    
+    </div>
+    <h1>Bienvenidos a Ropa para Mi.</h1> <!-- al haber hecho desde github MERGER PULL REQUEST  me modifico atomaticamente en mi archivo (index.html) -->
      <br>
      <br>
      <br>
