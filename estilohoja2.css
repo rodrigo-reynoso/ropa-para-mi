@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  background: #383838;
+}
+.box-2 {
+  overflow: hidden;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+.logo-segunda-pagina {
+  height: 42px;
+
+  background-color: #383838;
+
+  float: left;
+  width: 20%;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 7px;
+}
+.container-2 input#search {
+  width: 80%;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 14pt;
+  color: #63717f;
+  padding-left: 45px;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.55s ease;
+}
+.container-2 input#search:hover,
+.container-2 input#search:focus,
+.container-2 input#search:active {
+  outline: none;
+  background: #ffffff;
+}
+.linea-2 {
+  border: 3px solid #fa7d09;
+  border-radius: 300px/10px;
+  height: 0px;
+  text-align: center;
+}
+.linea-3 {
+  border: 3px solid #ff4301;
+  border-radius: 300px/10px;
+  height: 0px;
+  text-align: center;
+}
