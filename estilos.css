@@ -18,7 +18,7 @@ body {
   white-space: nowrap;
   position: relative;
 }
-.container-1 input#search {
+.container-1 input#search1 {
   width: 300px;
   height: 50px;
   background: #2b303b;
@@ -47,9 +47,9 @@ body {
   z-index: 1;
   color: #fa7d09; /*#4f5b66; */
 }
-.container-1 input#search:hover,
-.container-1 input#search:focus,
-.container-1 input#search:active {
+.container-1 input#search1:hover,
+.container-1 input#search1:focus,
+.container-1 input#search1:active {
   outline: none;
   background: #ffffff;
 }
