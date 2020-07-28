@@ -1,31 +1,66 @@
 * {
   margin: 0;
   background: #383838;
+  box-sizing: border-box;
 }
-.box-2 {
-  overflow: hidden;
-  text-align: center;
+.cont-padre-pagina-busqueda {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
 }
-h1 {
-  color: white;
+.hijo-busqueda {
+  display: flex;
+  flex-flow: row nowrap;
 }
+
 .logo-busqueda {
+  align-self: center;
   height: 42px;
+  padding: 0;
 
   background-color: #383838;
-
-  float: left;
-  width: 20%;
-  font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 30%;
+  /* font-size: 15px; */
   text-align: center;
   padding-top: 7px;
 }
-.container-2 input#search {
-  width: 80%;
+
+.logo-busqueda h1 {
+  color: white;
+  font-family: Verdana, sans-serif;
+  padding-left: 30px;
+  -webkit-text-stroke: 0.5px #312a2a;
+}
+.palabra-1:first-letter {
+  color: #80bdab;
+  font-family: Verdana, oblique;
+  font-size: 30px;
+}
+.palabra-2:first-letter {
+  color: #bf1c81;
+  font-family: Verdana, oblique;
+  font-size: 30px;
+}
+.palabra-3:first-letter {
+  color: #ff9595;
+  font-family: Verdana, oblique;
+  font-size: 30px;
+}
+.buscador {
+  width: 100%;
+}
+.buscador input {
+  width: 100%;
+  font-size: 14pt;
+}
+.buscador input#search {
+  border: violet 2px solid;
   height: 50px;
   background: #2b303b;
   border: none;
-  font-size: 14pt;
   color: #63717f;
   padding-left: 45px;
   display: block;
@@ -34,21 +69,42 @@ h1 {
   border-radius: 5px;
   -webkit-transition: background 0.55s ease;
 }
-.container-2 input#search:hover,
-.container-2 input#search:focus,
-.container-2 input#search:active {
+.buscador input#search:hover,
+.buscador input#search:focus,
+.buscador input#search:active {
   outline: none;
   background: #ffffff;
 }
-.linea-2 {
+.linea-1 {
   border: 3px solid #fa7d09;
   border-radius: 300px/10px;
   height: 0px;
   text-align: center;
 }
-.linea-3 {
+.linea-2 {
   border: 3px solid #ff4301;
   border-radius: 300px/10px;
   height: 0px;
   text-align: center;
+}
+.span {
+  border: #000000 2px solid;
+}
+@media all and (max-width: 1200px) {
+  .logo-busqueda {
+    justify-content: center;
+    font-size: calc(1rem + 1vw);
+  }
+  .logo-busqueda h1 {
+    padding-left: calc(0.2rem + 0.2vw);
+  }
+  .palabra-1 {
+    font-size: calc(0.5rem + 0.5vw);
+  }
+  .palabra-2 {
+    font-size: calc(0.5rem + 0.5vw);
+  }
+  .palabra-3 {
+    font-size: calc(0.5rem + 0.5vw);
+  }
 }

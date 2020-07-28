@@ -1,24 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: #383838;
 }
-.container-logo {
+.contenedor-padre {
   display: flex;
-  position: relative;
-  top: 100px;
-  left: 300px;
+  flex-flow: column nowrap;
 }
-.box {
-  margin: 0 auto;
-  width: 300px;
-  height: 50px;
+.hijo-section {
+  display: flex;
+  flex-flow: column nowrap;
 }
-.container-1 {
+
+.section-logo {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+}
+.logo {
+  width: 210px;
+  height: 80px;
+  background: url(logoprincipal.png);
+  background-position: center;
+  background-size: inherit;
+  align-self: flex-end;
+}
+.section-busqueda {
+  align-self: center;
+}
+.cont-busqueda {
   width: 300px;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
-.container-1 input#search1 {
+.cont-busqueda input#search1 {
   width: 300px;
   height: 50px;
   background: #2b303b;
@@ -34,9 +55,12 @@ body {
   -webkit-transition: background 0.55s ease;
 }
 .icon {
+  display: inline-block;
   font-size: 1.8em;
+  border: none;
+  -webkit-border-radius: 5px;
 }
-.container-1 .icon {
+.cont-busqueda .icon {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -47,14 +71,53 @@ body {
   z-index: 1;
   color: #fa7d09; /*#4f5b66; */
 }
-.container-1 input#search1:hover,
-.container-1 input#search1:focus,
-.container-1 input#search1:active {
+.cont-busqueda .icon:hover {
+  background: #2b303b;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.55s ease;
+}
+.cont-busqueda input#search1:hover,
+.cont-busqueda input#search1:focus,
+.cont-busqueda input#search1:active {
   outline: none;
   background: #ffffff;
 }
-.linea {
-  border-color: #ff4301;
+.hijo-linea {
+  margin-top: 300px;
+  width: 100%;
   position: relative;
-  top: 250px;
+  bottom: 0px;
+}
+.linea-a {
+  border: 10px solid #423a3a;
+  height: 0px;
+  text-align: center;
+}
+.linea-b {
+  border: 8px solid #503e3e;
+}
+.linea-c {
+  border: 6px solid #c47f3e;
+}
+.linea-d {
+  border: 4px solid #ff8d22;
+}
+.hijo-footer {
+  background: #000000;
+  color: #ea9a96;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  width: 100%;
+  height: 40px;
+}
+
+@media all and (max-width: 900px) {
+  .section-logo {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }
