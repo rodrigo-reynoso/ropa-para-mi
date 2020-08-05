@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <title>Ropa para mi</title>
-</head>
-<body>
-
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-    <script src="app.js"></script> 
-</body>
+  </head>
+  <body>
+    <div class="contenedor-padre">
+      <sector class="hijo-section">
+        <div class="section-logo">
+          <div class="logo"></div>
+        </div>
+        <div class="section-busqueda">
+          <div class="cont-busqueda">
+            <form action="busqueda.html">
+              <input
+                type="text"
+                name="busqueda"
+                id="search1"
+                placeholder="Buscá tu ropa..."
+              />
+              <button type="submit" class="icon" id="icono">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </sector>
+      <div class="hijo-linea">
+        <hr class="linea-a" />
+        <hr class="linea-b" />
+        <hr class="linea-c" />
+        <hr class="linea-d" />
+      </div>
+      <footer class="hijo-footer">
+        <h1>----Team Rubén----</h1>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
