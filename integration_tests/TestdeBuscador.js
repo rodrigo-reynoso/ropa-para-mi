@@ -10,7 +10,7 @@ async function TestdeBusqueda()
      await driver.findElement(By.id("icono")).click(); try{
      await driver.wait(until.titleIs("Página de Busqueda"), 1000);
      }                                                  /*en .getAttribute podes poner cualquier atributo del "input" de busqueda.html en este caso es "type"  */
-     finally {await driver.findElement(By.tagName("input")).getAttribute("type").then(function(txt){
+     finally {await driver.findElement(By.tagName("input")).getAttribute("value").then(function(txt){
     console.log("el input es " + txt);    
     });
 }
