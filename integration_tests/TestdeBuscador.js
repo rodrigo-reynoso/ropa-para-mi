@@ -4,7 +4,7 @@ const assert = require("assert");
 
 async function TestdeBusqueda() {
 
-    const RopaBuscada = "pantalon";
+const RopaBuscada = "pantalon";
 
 
 
@@ -13,15 +13,11 @@ async function TestdeBusqueda() {
     await driver.findElement(By.id("icono")).click(); try {
         await driver.wait(until.titleIs("Página de Busqueda"), 1000);
     }                                                  /*en .getAttribute podes poner cualquier atributo del "input" de busqueda.html en este caso es "type"  */
-    finally {
-        await driver.findElement(By.css("input")).getAttribute("value").then(function (SearchValue) {
-            assert.strictEqual(RopaBuscada, SearchValue, "el test fallo");
-
-
-        });
-    }
-
-
+finally {
+await driver.findElement(By.css("input")).getAttribute("value").then(function (searchvalue) {
+assert.strictEqual( RopaBuscada, searchvalue, "el test fallo");
+});
+}
 }
 
 TestdeBusqueda();
